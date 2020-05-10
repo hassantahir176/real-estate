@@ -1,0 +1,344 @@
+ul{
+    list-style: none;
+    margin: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+.svg-rotated-separater{
+    transform: rotateX(180deg);
+    fill: #f7f7f7;
+}
+svg.svg-hide-background-image-top, svg.svg-hide-background-image-bottom{
+    fill: #f7f7f7;
+    position: absolute;
+    height: 140px;
+    /* display: block; */
+    width: 100%;
+}
+svg.svg-hide-background-image-top {
+    transform: rotateY(180deg);
+}
+svg.svg-hide-background-image-bottom {
+    transform: rotateX(180deg);
+    bottom: 0;
+}
+.background-image-block-container{
+    position: relative;
+}
+/**********************  Header Start **********************/
+.header{
+    color: white;
+    height: 100px;
+    padding: 20px 0px;
+    background-color: lightgrey; /* For browsers that do not support gradients */
+    background: 0 0;
+    background-image: linear-gradient(180deg,#333,rgba(0,0,0,0) 100%);
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
+.header > div{
+    margin-right: 0px;
+}
+.header-main-menu > ul{
+    list-style: none;
+}
+.header-main-menu > ul > li{
+    display: inline-block;
+}
+.header-main-menu > ul li{
+    position: relative;
+}
+.header-main-menu > ul > li > a{
+    padding: 15px 20px;
+    color: white;
+}
+.header-main-menu li a{
+    display: inline-block;
+    transition: all .3s;
+}
+.header-main-menu ul li > a:hover{
+    background: #fab93e;
+    text-decoration: none;
+    color: white;
+}
+.header-main-menu > ul > li > ul.sub-menu{
+    top: 220%;
+}
+.header-main-menu ul.sub-menu{
+    list-style-type: none;
+    text-align: left;
+    position: absolute;
+    background: white;
+    width: 250px;
+    padding: 0px;
+    margin-left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.header-main-menu ul.sub-menu a{
+    padding: 20px;
+    padding-right: 30px;
+    width: 250px;
+    color: black;
+}
+.header-main-menu ul.sub-menu a:hover{
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.header-main-menu > ul > li > ul.sub-menu ul.sub-menu{
+    transition: all .3s;
+    left: 100%;
+    top: 100%;
+}
+.sub-menu .menu-item-has-children > a:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    float: right;
+}
+.header-main-menu .menu-item-has-children:hover > ul.sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.header-main-menu > ul > li.menu-item-has-children:hover > ul.sub-menu{
+    top: 100%;
+}
+.header-main-menu > ul > li.menu-item-has-children > ul.sub-menu li.menu-item-has-children:hover > ul.sub-menu{
+    top: 0;
+}
+/**********************  Header End **********************/
+
+/**********************  Carousel Start **********************/
+/* appear - on page load */
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear;
+}
+
+/* exit */
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms linear;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+
+.carousel img{
+    position: absolute;
+}
+/**********************  Carousel End **********************/
+
+/********************** Property Listing Start **********************/
+.property-listings > h2{
+    text-align: center;
+}
+.property-listing-container{
+    /*margin-top: 25px;
+    margin-bottom: 25px;
+
+        content: '\e800';
+    font-family: fontello;
+    */
+}
+.featured-slider-buttons-container {
+    padding: 0 10px;
+    text-align: end;
+}
+.featured-slider-buttons-container > span {
+    padding: 8px 15px;
+    display: inline-block;
+    margin: 5px 2px;
+    background: #fab93e;
+    color: white;
+    cursor: pointer;
+}
+.featured-slider-buttons-container > span.featured-prev-button::before{
+    content: '\e800';
+    font-family: fontello;
+}
+.featured-slider-buttons-container > span.featured-next-button::before{
+    content: '\e801';
+    font-family: fontello;
+}
+
+.featured-slider-buttons-container > span.featured-prev-button::before, 
+.featured-slider-buttons-container > span.featured-next-button::before{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.property-listing{
+    /* horizontal offest, vertical offset, blur, spread, color*/
+    box-shadow: 0 -1px 19px 0 rgba(7,152,255,.09);
+    transition: all .3s;
+    padding: 0px 10px 5px 10px;
+    
+}
+.property-listing a{
+    color: black;
+}
+.property-image-container {
+    overflow: hidden;
+}
+.property-listing .property-image, .property-listing .property-title{
+    transition: all .3s;
+}
+.property-listing:hover{
+    /* horizontal offest, vertical offset, blur, spread, color*/
+    box-shadow: 0 3px 23px 9px rgba(7,152,255,.15);
+    transform: translate(0%, -10px);
+}
+.property-listing:hover .property-image{
+    transform: scale(1.1);
+}
+
+.property-listing:hover .property-title{
+    color: #fab93e;
+}
+.property-info {
+    padding: 10px;
+}
+h4.property-price {
+    color: #fab93e;
+    font-weight: 500;
+}
+.bottom-info{
+    color: grey;
+}
+.bed-info::before{
+    content: '\e808';
+    font-family: fontello;
+}
+.bath-info::before{
+    content: '\e816';
+    font-family: fontello;
+}
+.area-info::before{
+    content: '\e819';
+    font-family: fontello;
+}
+.bottom-info > span.bath-info, .bottom-info > span.bed-info, .bottom-info > .area-info{
+    margin-right: 10px;
+}
+.bath-info::before, .bed-info::before, .area-info::before{
+    /*padding-left: 10px;*/
+    margin-left: 5px;
+    margin-right: 3px;
+}
+.bottom-info .property-full-info{
+    float: right;
+    background: orange;
+    padding: 2px 6px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.property-listing-container {
+    display: inline-block;
+    width: 400px;
+}
+.slider-container {
+    width: 5665px;
+    max-width: 5665px;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    padding: 0
+}
+.slider-wrapper {
+    height: 500px;
+    position: absolute;
+    width: 5565px;
+    transition: all .3s;
+}
+/* 
+The Property listing needs to have width=1/3 of visible area
+where visible area = width of slider container
+
+Slider Wrapper needs to have width=property-listing-width*Total Property listings
+
+
+Then when sliding, you need to keep the width of individual listing and slide left/right that much
+
+*/
+/********************** Property Listing End **********************/
+.section-with-background-container {
+    background: url(http://modern.b-cdn.net/wp-content/uploads/2019/07/cta-bg.jpg);
+    padding: 300px 0px;
+    color: white;
+    background-position: center 0;
+}
+.section-with-background {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.home-submit-property, .home-browse-properties{
+    background: #ea723d;
+    border: 0;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+/********************** Footer Start **********************/
+
+#footer{
+    background: #282c2f;
+    padding: 50px;
+    text-align: center;
+}
+#footer h4 {
+    color:#fab93e;
+    
+}
+#footer, #footer a {
+    color: white;
+    
+}
+#footer a{
+    transition: all .3s;
+    display: inline-block;
+    padding: 5px 5px;
+}
+#footer a:hover{
+    color: orange;
+}
+#footer input{
+    display: inline-block;
+    height: 30px;
+}
+#footer button{
+    display: block;
+    width: 130px;
+    margin: auto;
+    background: orange;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 0px;
+}
+/********************** Footer End **********************/

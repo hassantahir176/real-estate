@@ -1,0 +1,110 @@
+export const houses_data = [
+    {
+        id: 1,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/interior_july_2019-525x328.jpg",
+        available_for: "Rent",
+        title: "Best House Ever",
+        beds: 3,
+        baths: 2,
+        area: 500,
+        price: 1000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 2,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/8-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 3,
+        baths: 2,
+        area: 500,
+        price: 75000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 3,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/office-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 2,
+        baths: 1,
+        area: 500,
+        price: 55000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 4,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/white_bed-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 2,
+        baths: 2,
+        area: 500,
+        price: 45000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 5,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/white_living-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 2,
+        baths: 1,
+        area: 500,
+        price: 55000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 6,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/white_couch-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 2,
+        baths: 1,
+        area: 500,
+        price: 55000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 7,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/8-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 2,
+        baths: 1,
+        area: 500,
+        price: 55000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 8,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/interior_july_2019-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 2,
+        baths: 1,
+        area: 500,
+        price: 55000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    },
+    {
+        id: 9,
+        image: "https://demo4wpresidence.b-cdn.net/wp-content/uploads/2014/05/white_living-525x328.jpg",
+        available_for: "Sale",
+        title: "Best House Ever",
+        beds: 2,
+        baths: 1,
+        area: 500,
+        price: 55000000,
+        excerpt: "This is the best house ever",
+        description: ""
+    }
+]
